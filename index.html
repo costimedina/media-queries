@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Ecommerce Media Queries</title>
+
+    <!--Font Awesome-->
+
+    <script src="https://kit.fontawesome.com/b7937bbb7c.js" crossorigin="anonymous"></script>
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Mi estilo-->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Contenedor principal padre -->
+
+    <div class="contenedorPadre">
+
+        <!-- Contenedor hijo tipo nav con logo y hamburguesa -->
+
+        <div class="nav">
+
+            <div class="titulo">
+
+                <img class="foodserviceIcon" src="assets/img/icon-comida.png" alt="">
+
+                <h2>Food Service</h2>
+
+            </div>
+
+            <i class="fa-solid fa-bars fa-2x"></i>
+
+            <div class="barraLateral">
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Italiana</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Coreana</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Mexicana</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Griega</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Chilena</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Japonesa</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida India</h4>
+
+                </div>
+
+                <div class="barraBusqueda">
+
+                    <h4>Comida Vietnamita</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contenedor hijo tipo barra select elements -->
+
+        <div class="ordenarPor">
+
+            <p>Ordenar por:</p>
+
+            <!-- Se agrega barra "select elements" -->
+
+            <div class="selector">
+
+                <select name="comidas" id="comidas">
+
+                    <option value="italiana">Comida Italiana</option>
+                    <option value="coreana">Comida Coreana</option>
+                    <option value="mexicana">Comida Mexicana</option>
+                    <option value="griega">Comida Griega</option>
+                    <option value="chilena">Comida Chilena</option>
+                    <option value="japonesa">Comida Japonesa</option>
+                    <option value="india">Comida India</option>
+                    <option value="vietnamita">Comida Vietnamita</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Contenedor hijo tipo main -->
+
+        <div class="main">
+
+            <div class="tarjeta">
+
+                <img src="assets/img/pasta-italiana.jpg" alt="">
+                <h2>Pasta fresca</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/bowl-coreano.jpg" alt="">
+                <h2>Bibimbap</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/tacos.jpg" alt="">
+                <h2>Tacos Suaderos</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/shakshuka.jpg" alt="">
+
+                <h2>Shakshuka para dos</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/humitas.jpg" alt="">
+                <h2>Humitas para uno</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/ramen.jpg" alt="">
+
+                <h2>Ramen</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/india.jpg" alt="">
+
+                <h2>Butter chicken</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="assets/img/vietnam.jpg" alt="">
+
+                <h2>Pho</h2>
+                <p>$12.990</p>
+
+                <div class="botonFooter">
+                    <h4>Comprar</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contenedor hijo para cambio de páginas -->
+
+        <div class="paginador">
+
+            <ul class="paginas">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="activo" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Contenedor hijo tipo footer -->
+
+        <div class="footer">
+
+            <div class="infoFinal">
+
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-facebook fa-2x"></i>
+
+            </div>
+
+            <h4><strong> Todos los derechos reservados </strong></h4>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

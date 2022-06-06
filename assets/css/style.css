@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;    
+}
+
+/* Contenedor principal padre */
+
+.contenedorPadre{  
+    display: grid;
+    height: auto;
+    grid-template-areas:
+      "nav"
+      "ordenarPor"
+      "main"
+      "paginador"
+      "footer";
+}
+
+/* Características del nav con haburguesa */  
+  
+.nav {
+    grid-area: nav;
+    display: flex; 
+    align-items: center;
+    background-color: #d3b8ae; 
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+}
+
+.foodserviceIcon{
+    height: 40px;
+    padding-right: 10px;
+}
+
+.nav i{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.barraBusqueda{
+    display: none;
+}
+
+/* Características del selector de elementos */  
+  
+.ordenarPor{ 
+    grid-area: ordenarPor;
+    background-color: #d7ccc8;
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenarPor p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    width: 80%;
+    border-radius: 6px;
+    border-color: #a1887f;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+/* Características del main */  
+  
+.main{ 
+    grid-area: main;
+    display: grid;
+    background-color: #efefef;
+    justify-items: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+.tarjeta{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef; 
+    margin: 20px;
+}
+
+.tarjeta img{
+    width: 100%;
+    width: 323px;
+    justify-content: center;
+}
+
+.tarjeta h2{
+    text-align: center;
+}
+    
+.tarjeta p{
+    text-align: center;
+}
+
+ /* Botón con estilo */
+    
+.botonFooter{
+    display: flex;
+    background-color: #d3b8ae;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+}   
+
+/* Características de la barra de paginación */  
+  
+.paginador{ 
+    grid-area: paginador;
+    margin: 20px 0; 
+    text-align: center;
+}
+
+ul.paginas {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.paginas li {display: inline;}
+
+ul.paginas li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+ul.paginas li a.activo {
+    background-color: #a1887f;
+    color: white;
+}
+
+/* Características del footer */  
+  
+.footer{ 
+    grid-area: footer;
+    background-color: #a1887f;
+    position: sticky;
+    bottom: 0; 
+}
+
+.infoFinal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoFinal i{
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.footer h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}  
+
+/* VISTA DESKTOP CON MAX-WIDTH DE 576PX */  
+
+@media (min-width: 576px){
+
+/* CONTENEDOR PRINCIPAL PADRE */
+
+.contenedorPadre{
+    grid-template-areas:
+      "nav ordenarPor"
+      "nav main"
+      "nav main"
+      "footer main"
+      "footer paginador";
+      grid-template-columns: 0.5fr 4fr;
+      grid-template-rows: 1fr;
+}
+
+.main{
+    grid-template-areas:
+    "tarjeta tarjeta tarjeta"
+    "tarjeta tarjeta tarjeta";
+}
+
+.nav {
+    flex-direction: column;
+    padding: 0px 40px 0px 40px;
+    min-width: max-content;
+}
+
+.nav i{
+    display: none;
+}
+
+.barraBusqueda{
+    display: block;
+}
+
+.barraLateral{
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    width: 95%;
+}
+
+}
